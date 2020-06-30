@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Ramabhadra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <div class="score-board">
+        <img src="images/user.jpg" alt="" id="user-img">
+        <img src="images/smile.png" alt="" id="user-ch">
+        <div id="user" class="badge">user</div>
+        <img src="images/robot.png" alt="" id="comp-img">
+        <img src="images/smile.png" alt="" id="comp-ch">
+        <div id="comp" class="badge">comp</div>        
+        <span id="user-score">0</span>:<span id="comp-score">0</span>
+   
+    </div>
+
+    <div class="result">
+        <p>Let's start the fight</p>
+    </div>
+
+    <div class="choices">
+        <div class="choice" id="r">
+            <img src="images/left_rock.jpg" alt="rock">
+        </div>
+        <div class="choice" id="p">
+            <img src="images/left_paper.jpg" alt="paper">
+        </div>
+        <div class="choice" id="s">
+            <img src="images/left_scissor.jpg" alt="scissor">
+        </div>
+
+        <p id="action-message">Make your choice</p>
+    </div>
+    <div class="play-again">        
+        <button onClick="window.location.reload();">Restart</button>
+    </div>
+
+    <script src="app.js" charset="UTF-8"></script>
+</body>
+</html>
